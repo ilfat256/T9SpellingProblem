@@ -67,6 +67,12 @@
   <ItemGroup>
     <Analyzer Include="..\packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MessageLibrary\MessageLibrary.csproj">
+      <Project>{E0332357-DC26-470A-8429-C57C992695F9}</Project>
+      <Name>MessageLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

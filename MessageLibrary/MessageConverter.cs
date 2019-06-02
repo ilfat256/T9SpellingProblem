@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace T9Library
+namespace MessageLibrary
 {
     public class MessageConverter
     {
         private Dictionary<char, ButtonCombination> dictionary;
-        public MessageConverter(Dictionary<char, ButtonCombination> t9Dictionary)
+        public MessageConverter(Dictionary<char, ButtonCombination> dictionary)
         {
-            this.dictionary = t9Dictionary ?? throw new ArgumentNullException(nameof(t9Dictionary));
+            this.dictionary = dictionary ?? throw new ArgumentNullException(nameof(dictionary));
         }
 
         public string Translate(string message)

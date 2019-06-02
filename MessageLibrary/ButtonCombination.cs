@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace T9Library
+namespace MessageLibrary
 {
     public class ButtonCombination
     {

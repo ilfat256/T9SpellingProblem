@@ -1,22 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using T9Library;
 using Xunit;
 
-namespace T9LibraryTests
+namespace MessageLibrary
 {
     public class MessageConverterTests
     {
         [Fact]
-        public void T9Converter_WhenDictionaryIsNull_ThrowsArgumentNullException()
+        public void MessageConverterWhenDictionaryIsNull_ThrowsArgumentNullException()
         {
             Action act = () => new MessageConverter(null);
-            Assert.Throws<ArgumentNullException>("t9Dictionary", act);
+            Assert.Throws<ArgumentNullException>("dictionary", act);
         }
 
         [Fact]
-        public void T9Converter_WhenInputContains9_ThrowsT9ConverterException()
+        public void MessageConverterWhenInputContains9_ThrowsT9ConverterException()
         {
             var converter = new MessageConverter(T9Dictionary);
             var message = "9";
