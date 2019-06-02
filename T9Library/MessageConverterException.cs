@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace T9Library
 {
-    class T9ConverterException : Exception
+    public class MessageConverterException : Exception
     {
-        public T9ConverterException(string message) : base(message)
+        public MessageConverterException(string message) : base(message)
         {
         }
     }

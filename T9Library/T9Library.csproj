@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="T9Converter.cs" />
+    <Compile Include="ButtonCombination.cs" />
+    <Compile Include="MessageConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="T9ConverterException.cs" />
   </ItemGroup>
