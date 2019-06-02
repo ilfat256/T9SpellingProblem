@@ -16,7 +16,7 @@ namespace T9Library
 
         public string Translate(string message)
         {
-            if (string.IsNullOrWhiteSpace(message))
+            if (string.IsNullOrEmpty(message))
             {
                 return string.Empty;
             }

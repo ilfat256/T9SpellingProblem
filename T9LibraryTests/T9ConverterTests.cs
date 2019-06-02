@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using T9Library;
 using Xunit;
 
@@ -34,7 +35,25 @@ namespace T9LibraryTests
             Assert.Equal(translatedMessage, result);
         }
 
-        Dictionary<char, string> T9Dictionary = new Dictionary<char, string>
+        [Theory]
+        [MemberData(nameof(GetT9Dictionary))]
+        public void Translate1(char symbol, string digitsRepresentation)
+        {
+            var converter = new T9Converter(T9Dictionary);
+            var result = converter.Translate(symbol.ToString());
+            Assert.Equal(digitsRepresentation, result);
+        }
+
+        public static IEnumerable<object[]> GetT9Dictionary()
+        {
+            //foreach (var item in T9Dictionary.Skip(scipCasesForDebugging))
+                foreach (var item in T9Dictionary)
+            {
+                yield return new object[] { item.Key, item.Value };
+            }
+        }
+
+        public static Dictionary<char, string> T9Dictionary = new Dictionary<char, string>
         {
             { 'a', "2" },
             { 'b', "22" },
