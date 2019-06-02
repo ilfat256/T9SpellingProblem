@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MessageLibrary\MessageLibrary.csproj">
+      <Project>{E0332357-DC26-470A-8429-C57C992695F9}</Project>
+      <Name>MessageLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\T9Library\T9Library.csproj">
+      <Project>{C9ABF22A-06B1-48EC-88F6-F42CD279EB30}</Project>
+      <Name>T9Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

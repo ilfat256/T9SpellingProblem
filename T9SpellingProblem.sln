@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T9LibraryTests", "T9Library
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageLibrary", "MessageLibrary\MessageLibrary.csproj", "{E0332357-DC26-470A-8429-C57C992695F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T9Library", "T9Library\T9Library.csproj", "{C9ABF22A-06B1-48EC-88F6-F42CD279EB30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E0332357-DC26-470A-8429-C57C992695F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0332357-DC26-470A-8429-C57C992695F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0332357-DC26-470A-8429-C57C992695F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9ABF22A-06B1-48EC-88F6-F42CD279EB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9ABF22A-06B1-48EC-88F6-F42CD279EB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9ABF22A-06B1-48EC-88F6-F42CD279EB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9ABF22A-06B1-48EC-88F6-F42CD279EB30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
